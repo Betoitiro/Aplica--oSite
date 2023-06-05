@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções</title>
+    <link rel="stylesheet" href="styleop.css">
+</head>
+<body>
+    <header>
+        <h1>Padaria Cravo e Canela</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="lista-item"><a href="Cardapio.html">Cardápio</a>
+                <a href="bebidas.html">
+                    <button type="button" class="beb">Bebidas
+                    </button>
+                </a></li>
+            <li onmouseover="exibirPreco(event, 'Pão Frances: R$19,00')" onmouseout="ocultarPreco(event)">
+                Pão <span class="preview" id="pre2"></span>
+            </li>
+            <li onmouseover="exibirPreco(event, 'Salgado: R$8,00')" onmouseout="ocultarPreco(event)">
+                Salgado <span class="preview" id="pre1"></span>
+            </li>
+            <li class="lista-item" onmouseover="exibirPreco(event, 'Execultivo: R$ 25,00')" onmouseout="ocultarPreco(event)">
+                Execultivo <span class="preview" id="pre"></span>
+            </li>
+            <li class="lista-item" onmouseover="exibirPreco(event, 'Sopa: R$11,00')" onmouseout="ocultarPreco(event)">
+                Sopa <span class="preview" id="pre3"></span>
+            </li>
+            <li class="loc"><a href="https://www.google.com/maps/place/padaria+e+conveniencia+cravo+e+canela/@-7.1175836,-34.8227926,14.74z/data=!4m6!3m5!1s0x7acddfcd25a2933:0x3f515a707c281eff!8m2!3d-7.1171175!4d-34.8235646!16s%2Fg%2F11tg994cgd">
+                Localização</a> </li>
+            
+            <li class="cont"><center><a href="https://instagram.com/padariacravoecanelapb?igshid=MzRlODBiNWFlZA== ">instagram</a><br><br><b></b>
+                <a href="https://wa.me/5583991413280">WhatsApp</a></li></center>
+        </ul>
+
+    </nav>
+
+
+
+
+    <main>
+        <section>
+            <h2>Bem-vindo à Padaria Cravo e Canela!</h2>
+            <p>Escolha uma opção acima para ver nosso cardápio ou encontrar nossa localização.
+                Tudo que voce procura esta aqui!<br>
+                Temos:<br>
+                Lanche, almoço, cafe, espetinho, sucos e tudo mais!<br>
+                Venha conferir a padaria Cravo e Canela, voce não vai se arrepender
+            
+            </p>
+        </section>
+    </main>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <footer>
+        <p>© 2023 Padaria Delícia. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        function exibirPreco(event, preco) {
+            var preview = event.target.getElementsByClassName("preview")[0];
+            preview.style.display = "block";
+            preview.textContent = preco;
+        }
+
+        function ocultarPreco(event) {
+            var preview = event.target.getElementsByClassName("preview")[0];
+            preview.style.display = "none";
+        }
+
+    </script>
+
+
+
+</body>
+</html>
